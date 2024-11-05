@@ -2,6 +2,7 @@ const signoutButton = document.getElementById("sign-out");
 
 var pageOpenedOnce = localStorage.getItem("pageOpenedOnce");
 var isSignedIn = localStorage.getItem("signedIn");
+var isSavingLogin = localStorage.getItem("isSaving");
 
 switch (pageOpenedOnce) {
   case "true":
@@ -36,6 +37,6 @@ signoutButton.addEventListener("click", () => {
 window.onbeforeunload = onUnload;
 
 function onUnload() {
-  if (!isSaving) isisSignedIn = false;
+  if (!isSavingLogin) isSignedIn = false;
   localStorage.setItem("pageOpenedOnce", pageOpenedOnce);
 }

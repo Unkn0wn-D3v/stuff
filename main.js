@@ -54,8 +54,9 @@ loginButton.addEventListener("click", (e) => {
     if (password == correlatingPassword) {
       signedIn = true;
       if (checkbox.checked) {
-        localStorage.setItem("signedIn", signedIn);
         isSaving = true;
+        localStorage.setItem("signedIn", signedIn);
+        localStorage.setItem("isSaving", isSaving);
         /*
         FIX THIS, THE PAGE IS STILL REMEMBERING YOU EVEN IF THE ISSAVING VALUE IS FALSE
         */
