@@ -5,7 +5,7 @@ const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const checkbox = document.getElementById("stay-signed-in");
 
-//localStorage.clear();
+localStorage.clear();
 
 var usernameMatch = false;
 var signedIn = localStorage.getItem("signedIn");
