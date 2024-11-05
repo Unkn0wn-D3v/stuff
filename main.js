@@ -56,6 +56,9 @@ loginButton.addEventListener("click", (e) => {
       if (checkbox.checked) {
         localStorage.setItem("signedIn", signedIn);
         isSaving = true;
+        /*
+        FIX THIS, THE PAGE IS STILL REMEMBERING YOU EVEN IF THE ISSAVING VALUE IS FALSE
+        */
       }
       window.location.replace("/home/homeIndex.html");
     }
