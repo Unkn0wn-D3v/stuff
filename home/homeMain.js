@@ -39,4 +39,6 @@ window.onbeforeunload = onUnload;
 function onUnload() {
   if (!isSavingLogin) isSignedIn = false;
   localStorage.setItem("pageOpenedOnce", pageOpenedOnce);
+  localStorage.setItem("signedIn", isSignedIn);
+  localStorage.setItem("isSaving", isSavingLogin);
 }
