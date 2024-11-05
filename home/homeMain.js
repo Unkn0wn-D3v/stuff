@@ -19,7 +19,7 @@ if (!pageOpenedOnce) {
 }
 
 if (!signedIn) {
-  window.location.replace("./../index.html");
+  window.location.replace("e/index.html");
 }
 
 signoutButton.addEventListener("click", () => {
