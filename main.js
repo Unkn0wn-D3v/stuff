@@ -30,7 +30,7 @@ const usernames = [
   "bransj2426@oshkosh.k12.wi.us",
 ];
 
-const passwords = ["whatapassword!", "whatapassword2!"];
+const passwords = ["whatapassword!", "whatapassword!"];
 
 if (signedIn) window.location.replace("/home/homeIndex.html");
 
@@ -56,8 +56,6 @@ loginButton.addEventListener("click", (e) => {
       if (checkbox.checked) {
         localStorage.setItem("signedIn", signedIn);
         isSaving = true;
-      } else {
-        isSaving = false;
       }
       window.location.replace("/home/homeIndex.html");
     }
