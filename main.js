@@ -28,9 +28,16 @@ switch (signedIn) {
 const usernames = [
   "kimc1145@oshkosh.k12.wi.us",
   "bransj2426@oshkosh.k12.wi.us",
+  "dartsm1288@oshkosh.k12.wi.us",
+  "smockh4147@oshkosh.k12.wi.us",
 ];
 
-const passwords = ["whatapassword!", "whatapassword!"];
+const passwords = [
+  "whatapassword!",
+  "what a fucking nigger - PewDiePie",
+  "1",
+  "peanut?atthesametime?",
+];
 
 if (signedIn) window.location.replace("/home/homeIndex.html");
 
