@@ -19,12 +19,12 @@ if (!pageOpenedOnce) {
 }
 
 if (!signedIn) {
-  window.location.replace("/../index.html");
+  window.location.replace("/index.html");
 }
 
 signoutButton.addEventListener("click", () => {
   localStorage.clear();
-  window.location.replace("/../index.html");
+  window.location.replace("/index.html");
 });
 
 window.onbeforeunload = onUnload;
