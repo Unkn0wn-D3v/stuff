@@ -16,6 +16,7 @@ switch (pageOpenedOnce) {
 if (!pageOpenedOnce) {
   pageOpenedOnce = true;
   signedIn = true;
+  localStorage.setItem("pageOpenedOnce", pageOpenedOnce);
 }
 
 if (!signedIn) {
@@ -24,7 +25,9 @@ if (!signedIn) {
 
 signoutButton.addEventListener("click", () => {
   localStorage.clear();
-  window.location.replace("/index.html");
+  setTimeout(() => {
+    window.location.replace("/index.html");
+  }, 100);
 });
 
 window.onbeforeunload = onUnload;
