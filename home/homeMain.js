@@ -1,6 +1,7 @@
 const signoutButton = document.getElementById("sign-out");
 
 var pageOpenedOnce = localStorage.getItem("pageOpenedOnce");
+var isSignedIn = localStorage.getItem("signedIn");
 
 switch (pageOpenedOnce) {
   case "true":
@@ -15,11 +16,11 @@ switch (pageOpenedOnce) {
 
 if (!pageOpenedOnce) {
   pageOpenedOnce = true;
-  signedIn = true;
+  isSignedIn = true;
   localStorage.setItem("pageOpenedOnce", pageOpenedOnce);
 }
 
-if (!signedIn) {
+if (!isSignedIn) {
   setTimeout(() => {
     window.location.replace("/index.html");
   }, 100);
@@ -35,6 +36,6 @@ signoutButton.addEventListener("click", () => {
 window.onbeforeunload = onUnload;
 
 function onUnload() {
-  if (!isSaving) signedIn = false;
+  if (!isSaving) isisSignedIn = false;
   localStorage.setItem("pageOpenedOnce", pageOpenedOnce);
 }
