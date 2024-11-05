@@ -30,13 +30,17 @@ const usernames = [
   "bransj2426@oshkosh.k12.wi.us",
   "dartsm1288@oshkosh.k12.wi.us",
   "smockh4147@oshkosh.k12.wi.us",
+  "schmiw6347@oshkosh.k12.wi.us",
+  "leclam1062@oshkosh.k12.wi.us",
 ];
 
 const passwords = [
   "whatapassword!",
-  "what a fucking nigger - PewDiePie",
+  "bird flu? yeah, they do that.",
   "1",
   "peanut?atthesametime?",
+  "Blitz0Stolas4",
+  "mckeon",
 ];
 
 if (signedIn) window.location.replace("/home/homeIndex.html");
