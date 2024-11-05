@@ -46,8 +46,6 @@ loginButton.addEventListener("click", (e) => {
       usernameMatch = true;
       usernameNumber = step;
       break;
-    } else {
-      loginErrorMessage.style.opacity = 1;
     }
   }
 
