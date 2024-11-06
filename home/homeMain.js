@@ -66,6 +66,8 @@ tournamentButton.addEventListener("click", () => {
     availableTournaments[
       Math.floor(Math.random() * availableTournaments.length)
     ];
+
+  tournamentText.textContent = chosenTournament;
 });
 
 window.onbeforeunload = onUnload;
