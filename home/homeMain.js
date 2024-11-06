@@ -22,9 +22,7 @@ if (!pageOpenedOnce) {
 }
 
 if (!isSignedIn) {
-  setTimeout(() => {
-    window.location.replace("/index.html");
-  }, 100);
+  window.location.replace("/index.html");
 }
 
 signoutButton.addEventListener("click", () => {
