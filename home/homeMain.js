@@ -64,7 +64,7 @@ signoutButton.addEventListener("click", () => {
 tournamentButton.addEventListener("click", () => {
   var chosenTournament =
     availableTournaments[
-      Math.floor(Math.random() * availableTournaments.length)
+      Math.floor(Math.random() * (availableTournaments.length + 1))
     ];
 
   tournamentText.textContent = chosenTournament;
