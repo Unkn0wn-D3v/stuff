@@ -70,9 +70,6 @@ loginButton.addEventListener("click", (e) => {
         isSaving = true;
         localStorage.setItem("signedIn", signedIn);
         localStorage.setItem("isSaving", isSaving);
-        /*
-        FIX THIS, THE PAGE IS STILL REMEMBERING YOU EVEN IF THE ISSAVING VALUE IS FALSE
-        */
       }
       window.location.replace("/home/homeIndex.html");
     }
