@@ -32,6 +32,7 @@ const usernames = [
   "smockh4147@oshkosh.k12.wi.us",
   "schmiw6347@oshkosh.k12.wi.us",
   "leclam1062@oshkosh.k12.wi.us",
+  "ellifc2473@oshkosh.k12.wi.us",
 ];
 
 const passwords = [
@@ -41,6 +42,7 @@ const passwords = [
   "peanut?atthesametime?",
   "Blitz0Stolas4",
   "mckeon",
+  "gfed.caiden.kim",
 ];
 
 if (signedIn) window.location.replace("/home/homeIndex.html");
