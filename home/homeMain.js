@@ -62,7 +62,7 @@ signoutButton.addEventListener("click", () => {
 
 //Generates a random tournament and sets the text content of the paragraph in the html documment
 tournamentButton.addEventListener("click", () => {
-  var chosenTournament = toString(availableTournaments[getRandomInt(2e)]);
+  var chosenTournament = toString(availableTournaments[getRandomInt(2)]);
 
   tournamentText.textContent = chosenTournament;
 });
