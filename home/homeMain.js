@@ -62,11 +62,7 @@ signoutButton.addEventListener("click", () => {
 
 //Generates a random tournament and sets the text content of the paragraph in the html documment
 tournamentButton.addEventListener("click", () => {
-  var chosenTournament = toString(
-    availableTournaments[
-      Math.floor(Math.random() * (availableTournaments.length + 1))
-    ]
-  );
+  var chosenTournament = toString(availableTournaments[getRandomInt(2e)]);
 
   tournamentText.textContent = chosenTournament;
 });
@@ -79,4 +75,8 @@ function onUnload() {
   localStorage.setItem("pageOpenedOnce", pageOpenedOnce);
   localStorage.setItem("signedIn", isSignedIn);
   localStorage.setItem("isSaving", isSavingLogin);
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
