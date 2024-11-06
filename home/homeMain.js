@@ -14,6 +14,16 @@ switch (pageOpenedOnce) {
   default:
     pageOpenedOnce = false;
 }
+switch (isSignedIn) {
+  case "true":
+    isSignedIn = true;
+    break;
+  case "false":
+    isSignedIn = false;
+    break;
+  default:
+    isSignedIn = false;
+}
 
 if (!pageOpenedOnce) {
   pageOpenedOnce = true;
